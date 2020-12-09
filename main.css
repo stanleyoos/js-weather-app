@@ -8,10 +8,45 @@ body {
   background-image: url(/bg.jpg);
   background-position: top center;
   background-size: cover;
+  font-family: Roboto;
 }
 
 .app-wrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header input {
+  margin: 20px;
+  border: none;
+  padding: 10px 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px 0px 16px 0;
+  max-width: 240px;
+  width: 100%;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+  flex: 1 1 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
